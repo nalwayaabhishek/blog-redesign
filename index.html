@@ -1,0 +1,58 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<!--<div id="wrapper3">-->
+  <!--<h1>Blog Posts</h1>-->
+  <!--<ul class="posts">-->
+    <!--{% for post in site.posts %}-->
+      <!--<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>-->
+    <!--{% endfor %}-->
+  <!--</ul>-->
+<!--</div>-->
+
+
+<div id="wrapper3">
+    <h1>Blog Posts</h1>
+
+    {% for post in site.posts %}
+
+    {% cycle '<div class="container">', '', '' %}
+
+    <div class="col-lg-4">
+        <div class="panel" style="background-color: {% cycle '#D9534F', '#428bca', '#1d2939'%}">
+            <div class="panel-heading">
+                <div class="row">
+                    <!--<div class="col-xs-6">-->
+                        <!--<i class="fa fa-comments fa-5x"></i>-->
+                    <!--</div>-->
+                    <div class="posts-box-text">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#">
+                <div class="panel-footer announcement-bottom">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            {{post.categories}}
+                            {{ post.date | date_to_string }}
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            <i class="fa fa-arrow-circle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    {% cycle '', '', '</div>' %}
+    {% endfor %}
+
+
+
+
+</div>
