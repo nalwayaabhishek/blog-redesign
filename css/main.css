@@ -16,7 +16,6 @@ body {
   background-color: #FFF;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
-  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,6 +47,7 @@ p { margin: 1em 0; }
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
 }
+
 
 /*****************************************************************************/
 /*
@@ -158,7 +158,9 @@ p { margin: 1em 0; }
 .post pre.terminal code {
   background-color: #333;
 }
-
+.post h1 {
+    font-size: 25px;
+}
 
 .blue {
     background-color: #428bca;
@@ -254,7 +256,8 @@ ul.contact li a
 
 #wrapper3 .posts-box-text a
 {
-  font-size: 30px;
+  font-size: 26px;
     color: white;
+    text-align: center;
 }
 
