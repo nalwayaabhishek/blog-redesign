@@ -253,11 +253,18 @@ ul.contact li a
     padding: 8em 0em;
     background: #8DCB89;
 }
+#wrapper3 .posts-box-text
+{
+    text-align: center;
 
+}
 #wrapper3 .posts-box-text a
 {
-  font-size: 26px;
+  font-size: 16px;
     color: white;
-    text-align: center;
 }
+
+
+
+
 

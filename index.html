@@ -15,10 +15,9 @@ title: Your New Jekyll Site
 
 <div id="wrapper3">
     <h1>Blog Posts</h1>
+    <div class="container">
 
     {% for post in site.posts %}
-
-    {% cycle '<div class="container">', '', '' %}
 
     <div class="col-lg-4">
         <div class="panel" style="background-color: {% cycle '#D9534F', '#428bca', '#1d2939'%}">
@@ -33,12 +32,12 @@ title: Your New Jekyll Site
 
                 </div>
             </div>
-            <a href="#">
+            <a href="{{ post.url }}">
                 <div class="panel-footer announcement-bottom">
                     <div class="row">
                         <div class="col-xs-6">
                             {{post.categories}}
-                            {{ post.date | date_to_string }}
+                            <!--{{ post.date | date_to_string }}-->
                         </div>
                         <div class="col-xs-6 text-right">
                             <i class="fa fa-arrow-circle-right"></i>
@@ -49,10 +48,10 @@ title: Your New Jekyll Site
         </div>
     </div>
 
-    {% cycle '', '', '</div>' %}
+
     {% endfor %}
 
-
+    </div>
 
 
 </div>
