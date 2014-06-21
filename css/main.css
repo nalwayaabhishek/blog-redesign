@@ -250,8 +250,14 @@ ul.contact li a
 #wrapper3
 {
     overflow: hidden;
-    padding: 8em 0em;
+    padding: 2em 0em;
     background: #8DCB89;
+}
+#wrapper3 h2
+{
+    font-size: 35px;
+    color: white;
+    text-align:center;
 }
 #wrapper3 .posts-box-text
 {
@@ -260,8 +266,20 @@ ul.contact li a
 }
 #wrapper3 .posts-box-text a
 {
-  font-size: 16px;
+  font-size: 14px;
     color: white;
+}
+.wrapper-intro h1
+{
+    font-size: 20px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #999;
+}
+.wrapper-intro p
+{
+    font-family: Georgia, Serif;
+    font-style: italic;
+    color: #666;
 }
 
 

@@ -3,53 +3,90 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<!--<div id="wrapper3">-->
-  <!--<h1>Blog Posts</h1>-->
-  <!--<ul class="posts">-->
-    <!--{% for post in site.posts %}-->
-      <!--<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>-->
-    <!--{% endfor %}-->
-  <!--</ul>-->
-<!--</div>-->
-
-
-<div id="wrapper3">
-    <h1>Blog Posts</h1>
-    <div class="container">
-
-    {% for post in site.posts %}
-
-    <div class="col-lg-4">
-        <div class="panel" style="background-color: {% cycle '#D9534F', '#428bca', '#1d2939'%}">
-            <div class="panel-heading">
-                <div class="row">
-                    <!--<div class="col-xs-6">-->
-                        <!--<i class="fa fa-comments fa-5x"></i>-->
-                    <!--</div>-->
-                    <div class="posts-box-text">
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                    </div>
-
-                </div>
+<div class="wrapper wrapper-intro">
+    <div class="container" id="top">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <span class="me image image-full"><img src="images/home/abhishek_nalwaya_sky.jpg" height="182"
+                                                       width="182" class="img-circle" alt=""/></span>
             </div>
-            <a href="{{ post.url }}">
-                <div class="panel-footer announcement-bottom">
-                    <div class="row">
-                        <div class="col-xs-6">
-                            {{post.categories}}
-                            <!--{{ post.date | date_to_string }}-->
+            <div class="col-md-4">
+
+                <h1><strong>Abhishek Nalwaya</strong></h1>
+                 <strong> Can talk in Ruby, JavaScript, Objective C and Java.</strong>
+                <p class="summary">
+                    I am the author of the book, RubyMotion iOS Development Essentials and Rhomobile Beginner's Guide
+                    published by Packt publications. I am a Technology enthusiast and can talk in Ruby, JavaScript,
+                    Objective C and Java. I occasionally speak at conferences such as RubyMotion Inspect Brussels,
+                    RubyConfIndia2012, RubyConfIndia2013, BeingAgile and many more.
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="row">
+                    <h1><strong>Recent Books</strong></h1>
+
+                    <div class="col-sm-3 col-md-4">
+
+                        <div class="thumbnail">
+                           <a href="http://www.amazon.com/RubyMotion-Develoment-Essentials-Abhishek-Nalwaya-ebook/dp/B00DZJA81Y/ref=sr_1_2?ie=UTF8&qid=1403334116&sr=8-2&keywords=rubymotion"> <img src="images/home/RubyMotion.png" alt="..." height="200" width="240"> </a>
+
                         </div>
-                        <div class="col-xs-6 text-right">
-                            <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                    <div class="col-sm-3 col-md-4">
+                        <div class="thumbnail">
+                           <a href="http://www.amazon.com/Rhomobile-Beginners-Guide-Abhishek-Nalwaya-ebook/dp/B005H0CCBI/ref=sr_1_2?s=digital-text&ie=UTF8&qid=1403334186&sr=1-2"> <img src="images/home/Rhomobile.png" alt="..." height="200" width="240"> </a>
+
                         </div>
                     </div>
                 </div>
-            </a>
+
+            </div>
         </div>
     </div>
+</div>
+<div id="wrapper3">
+
+    <div class="container">
+
+        <h2>Blog Posts</h2>
+
+        {% for post in site.posts %}
+
+        <div class="col-lg-4">
+            <div class="panel" style="background-color: {% cycle '#D9534F', '#428bca', '#1d2939'%}">
+                <div class="panel-heading">
+                    <div class="row">
+                        <!--<div class="col-xs-6">-->
+                        <!--<i class="fa fa-comments fa-5x"></i>-->
+                        <!--</div>-->
+                        <div class="posts-box-text">
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </div>
+
+                    </div>
+                </div>
+                <a href="{{ post.url }}">
+                    <div class="panel-footer announcement-bottom">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                {{post.categories}}
+                                <!--{{ post.date | date_to_string }}-->
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <i class="fa fa-arrow-circle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
 
 
-    {% endfor %}
+        {% endfor %}
 
     </div>
 
